@@ -24,6 +24,7 @@ var12="⣦⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⣉⣹⣿⣿⣿⣿⠟⠁⣰⣿�
 var13="⣿⣧⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠈⠉⠉⠙⠛⠉⠁⢀⣼⣿⣿⣿⣿⡟⠄⠄⠄"
 
 shrex=[var1, var2, var3, var4, var5, var6, var7, var8, var9, var10, var11, var12, var13]
+print('SHREKS AFFIRME : "LE SERVEUR EST DOWN, CHANGEMENT D'IP......."')
 
 for i in shrex:
     print(i)
