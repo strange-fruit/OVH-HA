@@ -27,7 +27,7 @@ function UP()
                 if [ $? == 0 ]
                 then
                         echo "UP"
-                        python3 /home/save/exportdns.py ipvps
+                        python3 /home/save/dnszoneOVH.py ipvps
 			break
                 fi
         done
