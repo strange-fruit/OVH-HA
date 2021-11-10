@@ -1,15 +1,18 @@
 #!/bin/bash
 
+ipbck=""
+ipvps=""
+
 function DOWN()
 {
 	while true
 	do
-		ping -c 10 <IP> > /dev/null
+		ping -c 10 ipvps > /dev/null
 
 		if [ $? != 0 ]
 		then
 			echo "DOWN"
-			python3 /home/save/dnszoneOVH.py <IP>
+			python3 /home/save/dnszoneOVH.py ipbck
 			break
 		fi
 	done
@@ -19,12 +22,12 @@ function UP()
 {
 	while true
         do
-                ping -c 10 <IP> > /dev/null
+                ping -c 10 ipvps > /dev/null
 
                 if [ $? == 0 ]
                 then
                         echo "UP"
-                        python3 /home/save/exportdns.py <IP>
+                        python3 /home/save/exportdns.py ipvps
 			break
                 fi
         done
